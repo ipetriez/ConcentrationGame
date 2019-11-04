@@ -8,20 +8,26 @@
 
 /* Begin PBXBuildFile section */
 		706585A122E308A70028FAEA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 706585A022E308A70028FAEA /* AppDelegate.swift */; };
-		706585A322E308A70028FAEA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 706585A222E308A70028FAEA /* ViewController.swift */; };
+		706585A322E308A70028FAEA /* ConcentrationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 706585A222E308A70028FAEA /* ConcentrationViewController.swift */; };
 		706585A622E308A70028FAEA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 706585A422E308A70028FAEA /* Main.storyboard */; };
 		706585A822E308A80028FAEA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 706585A722E308A80028FAEA /* Assets.xcassets */; };
 		706585AB22E308A80028FAEA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 706585A922E308A80028FAEA /* LaunchScreen.storyboard */; };
+		706585B422E3473C0028FAEA /* ConcentrationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 706585B322E3473C0028FAEA /* ConcentrationModel.swift */; };
+		7072E66A235E33BB00FFA045 /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7072E669235E33BB00FFA045 /* Card.swift */; };
+		7072E66C235E3BD900FFA045 /* ConcentrationThemeChooserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7072E66B235E3BD900FFA045 /* ConcentrationThemeChooserViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		7065859D22E308A70028FAEA /* ConcentrationGame (Stanford University).app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ConcentrationGame (Stanford University).app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7065859D22E308A70028FAEA /* ConcentrationGame.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ConcentrationGame.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		706585A022E308A70028FAEA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		706585A222E308A70028FAEA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		706585A222E308A70028FAEA /* ConcentrationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConcentrationViewController.swift; sourceTree = "<group>"; };
 		706585A522E308A70028FAEA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		706585A722E308A80028FAEA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		706585AA22E308A80028FAEA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		706585AC22E308A80028FAEA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		706585B322E3473C0028FAEA /* ConcentrationModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConcentrationModel.swift; sourceTree = "<group>"; };
+		7072E669235E33BB00FFA045 /* Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
+		7072E66B235E3BD900FFA045 /* ConcentrationThemeChooserViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConcentrationThemeChooserViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -46,7 +52,7 @@
 		7065859E22E308A70028FAEA /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				7065859D22E308A70028FAEA /* ConcentrationGame (Stanford University).app */,
+				7065859D22E308A70028FAEA /* ConcentrationGame.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -54,22 +60,33 @@
 		7065859F22E308A70028FAEA /* ConcentrationGame (Stanford University) */ = {
 			isa = PBXGroup;
 			children = (
-				706585A022E308A70028FAEA /* AppDelegate.swift */,
-				706585A222E308A70028FAEA /* ViewController.swift */,
+				706585B222E30F290028FAEA /* Supporting Files */,
+				706585A222E308A70028FAEA /* ConcentrationViewController.swift */,
+				706585B322E3473C0028FAEA /* ConcentrationModel.swift */,
+				7072E66B235E3BD900FFA045 /* ConcentrationThemeChooserViewController.swift */,
+				7072E669235E33BB00FFA045 /* Card.swift */,
 				706585A422E308A70028FAEA /* Main.storyboard */,
-				706585A722E308A80028FAEA /* Assets.xcassets */,
-				706585A922E308A80028FAEA /* LaunchScreen.storyboard */,
 				706585AC22E308A80028FAEA /* Info.plist */,
 			);
 			path = "ConcentrationGame (Stanford University)";
 			sourceTree = "<group>";
 		};
+		706585B222E30F290028FAEA /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				706585A922E308A80028FAEA /* LaunchScreen.storyboard */,
+				706585A022E308A70028FAEA /* AppDelegate.swift */,
+				706585A722E308A80028FAEA /* Assets.xcassets */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		7065859C22E308A70028FAEA /* ConcentrationGame (Stanford University) */ = {
+		7065859C22E308A70028FAEA /* ConcentrationGame */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 706585AF22E308A80028FAEA /* Build configuration list for PBXNativeTarget "ConcentrationGame (Stanford University)" */;
+			buildConfigurationList = 706585AF22E308A80028FAEA /* Build configuration list for PBXNativeTarget "ConcentrationGame" */;
 			buildPhases = (
 				7065859922E308A70028FAEA /* Sources */,
 				7065859A22E308A70028FAEA /* Frameworks */,
@@ -79,9 +96,9 @@
 			);
 			dependencies = (
 			);
-			name = "ConcentrationGame (Stanford University)";
+			name = ConcentrationGame;
 			productName = "ConcentrationGame (Stanford University)";
-			productReference = 7065859D22E308A70028FAEA /* ConcentrationGame (Stanford University).app */;
+			productReference = 7065859D22E308A70028FAEA /* ConcentrationGame.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -99,7 +116,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 7065859822E308A70028FAEA /* Build configuration list for PBXProject "ConcentrationGame (Stanford University)" */;
+			buildConfigurationList = 7065859822E308A70028FAEA /* Build configuration list for PBXProject "ConcentrationGame" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -112,7 +129,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				7065859C22E308A70028FAEA /* ConcentrationGame (Stanford University) */,
+				7065859C22E308A70028FAEA /* ConcentrationGame */,
 			);
 		};
 /* End PBXProject section */
@@ -135,8 +152,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				706585A322E308A70028FAEA /* ViewController.swift in Sources */,
+				7072E66C235E3BD900FFA045 /* ConcentrationThemeChooserViewController.swift in Sources */,
+				706585B422E3473C0028FAEA /* ConcentrationModel.swift in Sources */,
+				706585A322E308A70028FAEA /* ConcentrationViewController.swift in Sources */,
 				706585A122E308A70028FAEA /* AppDelegate.swift in Sources */,
+				7072E66A235E33BB00FFA045 /* Card.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -289,7 +309,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.ipetrie.ConcentrationGame--Stanford-University-";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ipetrie.ConcentrationGame;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -307,7 +327,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.ipetrie.ConcentrationGame--Stanford-University-";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ipetrie.ConcentrationGame;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -317,7 +337,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		7065859822E308A70028FAEA /* Build configuration list for PBXProject "ConcentrationGame (Stanford University)" */ = {
+		7065859822E308A70028FAEA /* Build configuration list for PBXProject "ConcentrationGame" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				706585AD22E308A80028FAEA /* Debug */,
@@ -326,7 +346,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		706585AF22E308A80028FAEA /* Build configuration list for PBXNativeTarget "ConcentrationGame (Stanford University)" */ = {
+		706585AF22E308A80028FAEA /* Build configuration list for PBXNativeTarget "ConcentrationGame" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				706585B022E308A80028FAEA /* Debug */,
